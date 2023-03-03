@@ -1,0 +1,18 @@
+This contains all of the data generated for the simulation studies for jrSiCKLSNMF. 
+Every simulated dataset contains a list of two X matrices and a list of two L matrices.
+
+The X list of matrices contains the simulated single-cell data while the L matrices contain 
+constructed graphs. If they are marked as bulk, the graphs are generated from simulated
+bulk data.
+
+The first item in the list of X matrices is a gene by cell matrix of simulated scRNA-seq counts
+and the second is a peak by cell matrix of simulated scATAC-seq counts. Similarly, the L list contains
+two matrices, which are KNN graphs of the feature-feature similarity for each view.
+
+For all datasets, cells 1-100 are simulated HEK2, cells 101-200 are simulated HepG2 cells, 
+and cells 201-300 are simulated Mix cells.
+
+One can generate the true cell types in R via:
+
+truth<-c(rep("HEK293",100),rep("HepG2",100),rep("Mix",100))
+
