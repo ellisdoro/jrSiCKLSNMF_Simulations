@@ -5,6 +5,9 @@ The X list of matrices contains the simulated single-cell data while the L matri
 constructed graphs. If they are marked as bulk, the graphs are generated from simulated
 bulk data.
 
+If there is no number after the folder name, the files contain no added noise. 25 is the 
+smallest amount of added noise, 50 is second, and 100 is the most.
+
 The first item in the list of X matrices is a gene by cell matrix of simulated scRNA-seq counts
 and the second is a peak by cell matrix of simulated scATAC-seq counts. Similarly, the L list contains
 two matrices, which are KNN graphs of the feature-feature similarity for each view.
